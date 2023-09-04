@@ -3,9 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: #202020;
+  --bg-color: #000;
+  color-scheme: dark;
 }
 
 body {
   background-color: var(--bg-color);
+}
+
+.heading {
+  font-size: 40vh;
+}
+
+.item-blur {
+  backdrop-filter: blur(20px);
+}
+
+@media (max-width: 1000px) {
+  .heading {
+      font-size: 23vh/* 128px */;
+      line-height: 1;
+  }
+}
+
+@media (max-width: 726px) {
+  .heading {
+      font-size: 14vh/* 128px */;
+      line-height: 1;
+  }
 }

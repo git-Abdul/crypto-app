@@ -11,7 +11,8 @@ module.exports = {
         "bridge": ["Bricolage Grotesque"],
         "poppins": ["Poppins"],
         "kanit": ["Kanit"],
-        "borel": ["Borel"]
+        "borel": ["Borel"],
+        "bebas": ["Bebas Neue"]
       }
     },
   },
