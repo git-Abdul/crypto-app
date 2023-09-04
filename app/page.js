@@ -98,7 +98,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-center items-center md:-mt-20 mb-10 -mt-6 p-5 text-center">
-          <p className="font-bridge uppercase text-xl">Track and trade crypto currencies</p>
+          <p className="font-bridge uppercase text-xl text-gradient">Track and trade crypto currencies</p>
         </div>
         <div className="flex justify-center gap-10 mb-14 select-none">
           <a href="https://instagram.com">
