@@ -89,7 +89,7 @@ export default function Home() {
           />
         </div>
         {/*Main heading and image*/}
-        <div className="flex flex-col md:flex-row justify-center items-center md:mb-5 mb-0 mt-16">
+        <div className="flex justify-center items-center md:mb-5 mb-0 mt-16">
           <p
             className="font-bebas text-white md:mt-0 mt-20 uppercase font-bold md:text-left text-center heading select-none"
             style={{ padding: 30 }}
@@ -98,30 +98,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex justify-center items-center md:-mt-20 mb-10 -mt-6 p-5 text-center">
-          <p className="font-bridge uppercase text-xl text-gradient">Track and trade crypto currencies</p>
-        </div>
-        <div className="flex justify-center gap-10 mb-14 select-none">
-          <a href="https://instagram.com">
-            <img
-              src="icon1.svg"
-              alt="Icon 1"
-              className="md:w-12 md:h-12 h-8 w-8"
-            />
-          </a>
-          <a href="https://twitter.com">
-            <img
-              src="icon2.svg"
-              alt="Icon 2"
-              className="md:w-12 md:h-12 h-8 w-8"
-            />
-          </a>
-          <a href="https://discord.com">
-            <img
-              src="icon3.svg"
-              alt="Icon 3"
-              className="md:w-12 md:h-12 h-8 w-8"
-            />
-          </a>
+          <p className="font-bridge uppercase md:text-2xl text-sm text-gradient font-bold">Track and trade crypto currencies</p>
         </div>
       </div>
     </main>

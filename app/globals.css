@@ -28,18 +28,14 @@ body {
 
 @media (max-width: 1000px) {
   .heading {
-    font-size: 23vh
-      /* 128px */
-    ;
+    font-size: 128px;
     line-height: 1;
   }
 }
 
 @media (max-width: 726px) {
   .heading {
-    font-size: 14vh
-      /* 128px */
-    ;
+    font-size: 100px;
     line-height: 1;
   }
 }
