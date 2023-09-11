@@ -39,3 +39,10 @@ body {
     line-height: 1;
   }
 }
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 80px;
+    line-height: 1;
+  }
+}
