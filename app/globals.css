@@ -26,6 +26,11 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+td {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1000px) {
   .heading {
     font-size: 128px;
