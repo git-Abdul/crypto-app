@@ -23,24 +23,27 @@ export function CoinList() {
   ];
 
   return (
-    <div className="flex justify-center gap-20 mb-14 select-none">
-      {crypto.map((val, id) => (
-        <div key={id} className="font-bridge text-lg">
-          <a href={val.websiteUrl}>
-            <img
-              src={cryptoImages[id]}
-              alt={`Icon ${id + 1}`}
-              className="w-16 h-16 mb-4 items-center ml-5"
-            />
-            <div className="text-center">
-              <p>{val.name} <span className="font-bold" style={{ color: val.priceChange1w < 0 ? "#ff0008" : "#0ecb81" }}>{val.priceChange1w}</span></p>
-              <p>
-                $ {val.price.toFixed(2)}
-              </p>
-            </div>
-          </a>
-        </div>
-      ))}
-    </div>
+    <>
+      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <div className="flex justify-center md:gap-20 gap-5 mb-14 select-none">
+        {crypto.map((val, id) => (
+          <div key={id} className="font-bridge md:text-lg text-sm">
+            <a href={val.websiteUrl}>
+              <img
+                src={cryptoImages[id]}
+                alt={`Icon ${id + 1}`}
+                className="md:w-16 md:h-16 h-8 w-8 mb-4 items-center md:ml-5 ml-7"
+              />
+              <div className="text-center">
+                <p>{val.name} <span className="font-bold" style={{ color: val.priceChange1w < 0 ? "#ff0008" : "#0ecb81" }}>{val.priceChange1w}</span></p>
+                <p>
+                  $ {val.price.toFixed(2)}
+                </p>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }

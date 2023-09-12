@@ -7,8 +7,8 @@ import { CoinList } from "./components/coinList";
 export default function Home() {
   return (
     <main>
-      <NavBar />
       <div className="select-none">
+        <NavBar />
         <Rays />
         {/*Main heading and image*/}
         <div className="text-center md:mb-5 mb-0 md:mt-20 mt-32">
@@ -22,8 +22,8 @@ export default function Home() {
         <div className="flex justify-center items-center md:-mt-20 mb-10 -mt-6 p-5 text-center">
           <p className="font-bridge uppercase lg:text-2xl md:text-xl text-sm text-gradient font-bold">Track and trade crypto currencies</p>
         </div>
+        <CoinList />
       </div>
-      <CoinList />
     </main>
   )
 }
