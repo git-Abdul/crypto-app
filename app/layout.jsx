@@ -12,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="favicon.png" sizes="any" />
+      <head>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="icon" href="favicon.png" sizes="any" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )

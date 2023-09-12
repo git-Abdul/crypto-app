@@ -13,6 +13,9 @@ module.exports = {
         "kanit": ["Kanit"],
         "borel": ["Borel"],
         "bebas": ["Bebas Neue"]
+      },
+      spacing: {
+        "128": "32rem" 
       }
     },
   },

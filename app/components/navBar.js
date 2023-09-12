@@ -57,14 +57,14 @@ export function NavBar() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/about"}>
+                                <Link href={"/market"}>
                                     <p className="block text-lg py-2 pl-3 pr-4 text-white rounded md:hover:bg-transparent md:border-0 ease-in duration-200 hover:text-yellow-500 md:p-0 md:dark:hover:bg-transparent">
                                         Market
                                     </p>
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/projects"}>
+                                <Link href={"#about"}>
                                     <p className="block text-lg py-2 pl-3 pr-4 text-white rounded md:hover:bg-transparent md:border-0 md:p-0 ease-in duration-200 hover:text-yellow-500 md:dark:hover:bg-transparent">
                                         Choose Us
                                     </p>
