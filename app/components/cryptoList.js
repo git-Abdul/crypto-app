@@ -30,20 +30,23 @@ export function CryptoList() {
   }
 
   return (
-    <div className="w-full">
-      <div className="App">
-        <h1 className="mx-10 font-bridge md:text-5xl text-3xl font-bold">
-          All Cryptocurrencies
-        </h1>
-        <input
-          type="text"
-          placeholder="Search..."
-          onChange={(e) => {
-            setSearch(e.target.value);
-            setCurrentPage(1);
-          }}
-          className="p-4 m-8 bg-zinc-800 text-white rounded-xl md:my-10 my-3 font-poppins w-80 md:w-128"
-        />
+    <>
+      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <div className="w-full">
+        <div className="text-center">
+          <h1 className="font-bridge md:text-5xl text-3xl font-bold">
+            All Cryptocurrencies
+          </h1>
+          <input
+            type="text"
+            placeholder="Search..."
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setCurrentPage(1);
+            }}
+            className="p-4 m-8 bg-zinc-800 text-white rounded-xl font-poppins w-80 md:w-128"
+          />
+        </div>
         <div className="overflow-y-auto rounded-lg p-3 md:p-10">
           <table className="overflow-scroll w-full rounded-lg">
             <thead>
@@ -51,19 +54,22 @@ export function CryptoList() {
                 className="gradient text-center my-10 font-bridge"
                 style={{ borderRadius: "20px" }}
               >
-                <td className="md:p-5 p-2 text-lg md:text-xl font-medium">
+                <td className="md:p-5 p-2 text-lg md:text-xl font-medium" style={{ maxWidth: "1000px" }} >
                   Rank
                 </td>
-                <td className="md:p-5 p-2 text-lg md:text-xl font-medium">
+                <td className="md:p-5 p-2 text-lg md:text-xl font-medium" style={{ maxWidth: "1800px" }} >
                   Name
                 </td>
-                <td className="md:p-5 p-2 text-lg md:text-xl font-medium">
+                <td className="md:p-5 p-2 text-lg md:text-xl font-medium" style={{ maxWidth: "1800px" }} >
                   Symbol
                 </td>
-                <td className="md:p-5 p-2 text-lg md:text-xl font-medium">
+                <td className="md:p-5 p-2 text-lg md:text-xl font-medium" style={{ maxWidth: "1800px" }} >
                   Price
                 </td>
-                <td className="md:p-5 p-2 text-lg md:text-xl font-medium">
+                <td
+                  className="md:p-5 p-2 text-lg md:text-xl font-medium"
+                  style={{ maxWidth: "180px" }}
+                >
                   Market Cap
                 </td>
               </tr>
@@ -93,7 +99,9 @@ export function CryptoList() {
                     </td>
                     <td className="symbol">{val.symbol}</td>
                     <td>$ {val.price.toFixed(2)}</td>
-                    <td>$ {roundedCap}</td>
+                    <td style={{ maxWidth: "120px" }}>
+                      $ {roundedCap}
+                    </td>
                   </tr>
                 );
               })}
@@ -105,17 +113,16 @@ export function CryptoList() {
             <button
               key={number}
               onClick={() => setCurrentPage(number)}
-              className={`mx-2 px-3 py-1 rounded-md font-poppins text-xl ${
-                currentPage === number
-                  ? "gradient text-zinc-800"
-                  : "bg-zinc-800 text-white"
-              }`}
+              className={`mx-2 px-3 py-1 rounded-md font-poppins text-xl ${currentPage === number
+                ? "gradient text-zinc-800"
+                : "bg-zinc-800 text-white"
+                }`}
             >
               {number}
             </button>
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
