@@ -1,6 +1,5 @@
 import Axios from "axios";
 import { useEffect, useState } from "react";
-import { Progress } from "@/components/ui/progress";
 
 export function CoinList() {
   const [crypto, setCrypto] = useState([]);
@@ -29,7 +28,7 @@ export function CoinList() {
   return (
     <>
       {isLoading ? (
-        <Progress value={33} className="w-96 mx-auto" />
+        <div className="text-center font-poppins text-xl font-bold">Loading...</div>
       ) : (
         <>
           <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />

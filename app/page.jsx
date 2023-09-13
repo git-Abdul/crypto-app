@@ -3,6 +3,8 @@
 import { Rays } from "./components/rays";
 import { NavBar } from "./components/navBar";
 import { CoinList } from "./components/coinList";
+import { Content } from "./components/content";
+import { Footer } from "./components/footer";
 
 export default function Home() {
   return (
@@ -23,6 +25,7 @@ export default function Home() {
           <p className="font-bridge uppercase lg:text-2xl md:text-xl text-sm text-gradient font-bold">Track and trade crypto currencies</p>
         </div>
         <CoinList />
+        <Content />
       </div>
     </main>
   )

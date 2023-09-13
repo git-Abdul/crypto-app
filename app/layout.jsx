@@ -1,6 +1,7 @@
-import './globals.css'
-import './fonts.css'
-import { Inter } from 'next/font/google'
+import './globals.css';
+import './fonts.css';
+import { Inter } from 'next/font/google';
+import { Footer } from './components/footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,8 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="favicon.png" sizes="any" />
       </head>
-        <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
+      <Footer />
     </html>
   )
 }

@@ -10,9 +10,9 @@ export function NavBar() {
     return (
         <>
             {/* Navbar */}
-            <nav className="item-blur bg-fixed select-none fixed w-full top-0 z-10">
+            <nav className="item-blur border-b border-zinc-800 bg-fixed select-none fixed w-full top-0 z-10">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-3 px-6">
-                    <a href="#" className="flex items-center">
+                    <a href="#" className="flex items-center md:mb-3 mb-3">
                         <img src="https://media.tenor.com/UTJnB_zWwgwAAAAi/coin-spin.gif" class="md:h-12 h-8" alt="logo-svg" />
                     </a>
                     <button
@@ -45,11 +45,11 @@ export function NavBar() {
                             } w-full md:block md:w-auto`}
                         id="navbar-default"
                     >
-                        <ul className="font-bridge font-bold flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                        <ul className="flex flex-col font-poppins font-semibold p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
                             <li>
                                 <Link href={"/"}>
                                     <p
-                                        className="block text-lg py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 ease-in duration-200 hover:text-yellow-500"
+                                        className="block text-lg py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 ease-in duration-200 hover:gradient"
                                         aria-current="page"
                                     >
                                         Home
@@ -58,14 +58,14 @@ export function NavBar() {
                             </li>
                             <li>
                                 <Link href={"/market"}>
-                                    <p className="block text-lg py-2 pl-3 pr-4 text-white rounded md:hover:bg-transparent md:border-0 ease-in duration-200 hover:text-yellow-500 md:p-0 md:dark:hover:bg-transparent">
+                                    <p className="block text-lg py-2 pl-3 pr-4 text-white rounded md:hover:bg-transparent md:border-0 ease-in duration-200 hover:gradient md:p-0 md:dark:hover:bg-transparent">
                                         Market
                                     </p>
                                 </Link>
                             </li>
                             <li>
                                 <Link href={"#about"}>
-                                    <p className="block text-lg py-2 pl-3 pr-4 text-white rounded md:hover:bg-transparent md:border-0 md:p-0 ease-in duration-200 hover:text-yellow-500 md:dark:hover:bg-transparent">
+                                    <p className="block text-lg py-2 pl-3 pr-4 text-white rounded md:hover:bg-transparent md:border-0 md:p-0 ease-in duration-200 hover:gradient md:dark:hover:bg-transparent">
                                         Choose Us
                                     </p>
                                 </Link>
