@@ -53,6 +53,7 @@ export function CoinList() {
           </div>
         </>
       )}
+      <hr class="w-48 h-1 mx-auto my-4 border-0 rounded md:my-20 gradient"></hr>
     </>
   );
 }
